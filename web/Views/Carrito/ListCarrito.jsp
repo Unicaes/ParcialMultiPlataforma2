@@ -40,6 +40,9 @@
                         <li class="nav-item">
                             <a href="/Parcial/Views/Carrito/ListCarrito.jsp" class="nav-link btn btn-primary text-white">Carrito</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="/Parcial/Views/Carrito/CRUDCategoria.jsp" class="nav-link btn btn-primary text-white">Categoria</a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,19 +1,10 @@
 <%-- 
-    Document   : AddProveedor
-    Created on : Oct 12, 2021, 10:57:25 PM
-    Author     : bryan
+    Document   : CRUDCategoria
+    Created on : 10-15-2021, 02:02:52 PM
+    Author     : sklip
 --%>
 
-<%@page import="Model.Producto"%>
-<%@page import="Model.Categoria"%>
-<%@page import="Model.Proveedores"%>
-<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%
-    ArrayList<Proveedores> proveedores = Proveedores.GetAll();
-    ArrayList<Categoria> categorias = Categoria.GetAll();
-    ArrayList<Producto> productos = Producto.GetAll();
-%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -50,18 +41,10 @@
         </nav>
         <div class="container">
             <h1>Proveedores</h1>
-            <form action="${pageContext.request.contextPath}/ProveedorServlet" method="POST">
+            <form action="${pageContext.request.contextPath}/CategoriaServlet" method="POST">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre del Proveedor</label>
-                    <input type="text" name="txtNombreProv" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Telefono</label>
-                    <input type="number" name="txtMobile" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">contacto</label>
-                    <input type="text" name="txtContact" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1" class="form-label">Nombre de la categoria</label>
+                    <input type="text" name="txtNombreCat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <button type="submit"  name="btnAction" value="1-0" class="btn btn-primary">Registrar</button>
             </form>   
